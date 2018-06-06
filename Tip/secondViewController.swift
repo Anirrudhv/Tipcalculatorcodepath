@@ -14,12 +14,16 @@ class secondViewController: UIViewController {
     @IBOutlet weak var tenpercent: UILabel!
     @IBOutlet weak var fifteenpercent: UILabel!
     @IBOutlet weak var twentypercent: UILabel!
+    @IBOutlet weak var totten: UILabel!
+    @IBOutlet weak var totfif: UILabel!
+    @IBOutlet weak var tottwe: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,6 +37,12 @@ class secondViewController: UIViewController {
         tenpercent.text = String(tenp)
         fifteenpercent.text = String(fifteenp)
         twentypercent.text = String(twentyp)
+        let ten_tot = tenp + amount
+        let fif_tot = fifteenp + amount
+        let twe_tot = twentyp + amount
+        totten.text = String(ten_tot)
+        totfif.text = String(fif_tot)
+        tottwe.text = String(twe_tot)
         
         
     }
